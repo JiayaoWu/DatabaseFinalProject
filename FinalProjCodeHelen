@@ -1,6 +1,11 @@
-create table abbrev (Type VARCHAR(10), Code VARCHAR(5), Fullname VARCHAR(54));
+##################################################
+# Code to load csv files into tables in MySQL
+#
+##################################################
 
-LOAD DATA LOCAL INFILE '/Users/HelenCollins/601.415/abbrev.csv' INTO TABLE abbrev FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 1 LINES;
+create table Abbrev (Type VARCHAR(10), Code VARCHAR(5), Fullname VARCHAR(54));
+
+LOAD DATA LOCAL INFILE '/Users/HelenCollins/601.415/abbrev.csv' INTO TABLE Abbrev FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 1 LINES;
 
 create table AwardsCoaches (CoachID VARCHAR(10), Award VARCHAR(20), Year INT, LgID VARCHAR(3), Note VARCHAR(0));
 
@@ -35,9 +40,52 @@ create table HOF (Year INT, HofID VARCHAR(10), Name VARCHAR(20), Category VARCHA
 
 LOAD DATA LOCAL INFILE '/Users/HelenCollins/601.415/HOF.csv' INTO TABLE HOF FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n' IGNORE 1 LINES;
 
-create table Master (PlayerID VARCHAR(10), CoachID VARCHAR(10), HofID VARCHAR(10), FirstName VARCHAR(15), LastName VARCHAR(20), NameNote VARCHAR(35), NameGiven VARCHAR(30), NameNick VARCHAR(40), Height INT, Weight INT, ShootCatch VARCHAR (1), LegendsID VARCHAR(10), IhdbID INT, HrefID VARCHAR(10), FirstNHL INT, LastNHL INT, LastWHA INT, Pos VARCHAR(4), BirthYear INT, BirthMon INT, BirthDay INT, BirthCountry VARCHAR(18), BirthState VARCHAR(15), BirthCity VARCHAR(21), DeathYear INT, DeathMon INT, DeathDay INT, DeathCountry VARCHAR(15), DeathState VARCHAR(15), DeathCity VARCHAR(25));
+create table Master (PlayerID VARCHAR(10), CoachID VARCHAR(10), HofID VARCHAR(10), FirstName VARCHAR(15), LastName VARCHAR(20), NameNote VARCHAR(35), NameGiven VARCHAR(30), NameNick VARCHAR(40), Height INT, Weight INT, ShootCatch VARCHAR (1), LegendsID VARCHAR(10), IhdbID INT, HrefID VARCHAR(10), FirstNHL INT, LastNHL INT, FirstWHA INT, LastWHA INT, Pos VARCHAR(4), BirthYear INT, BirthMon INT, BirthDay INT, BirthCountry VARCHAR(18), BirthState VARCHAR(15), BirthCity VARCHAR(21), DeathYear INT, DeathMon INT, DeathDay INT, DeathCountry VARCHAR(15), DeathState VARCHAR(15), DeathCity VARCHAR(25));
 
 LOAD DATA LOCAL INFILE '/Users/HelenCollins/601.415/Master.csv' INTO TABLE Master FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n' IGNORE 1 LINES;
+
+create table TeamVsTeam (Year INTEGER, LgID VARCHAR(4), TmID VARCHAR(3), OppID VARCHAR(4), W INTEGER, L INTEGER, T INTEGER, OTL INTEGER);   
+
+LOAD DATA LOCAL INFILE '/Users/HelenCollins/601.415/TeamVsTeam.csv' INTO TABLE TeamVsTeam FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n' IGNORE 1 LINES;
+
+create table TeamSC (Year INTEGER, LgID VARCHAR(4), TmID VARCHAR(3), G INTEGER, W INTEGER, L INTEGER, T INTEGER, GF INTEGER, GA INTEGER, PIM INTEGER);   
+
+LOAD DATA LOCAL INFILE '/Users/HelenCollins/601.415/TeamsSC.csv' INTO TABLE TeamSC FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n' IGNORE 1 LINES;
+
+#TeamPost very similar to TeamSC...ahhh, it's post season, so do we really want it
+#create table TeamPost (Year INTEGER, LgID VARCHAR(4), TmID VARCHAR(3), G INTEGER, W INTEGER, L INTEGER, T INTEGER, GF INTEGER, GA INTEGER, PIM INTEGER);   
+#LOAD DATA LOCAL INFILE '/Users/wujiayao/Desktop/Databases/FinalProjectLocal/professional-hockey-database/TeamSC.csv' INTO TABLE TeamSC FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n' IGNORE 1 LINES;
+
+#another table we might not use... so ignore??
+#create table TeamSplits (Year INTEGER, LgID VARCHAR(4), TmID VARCHAR(3), G INTEGER, W INTEGER, L INTEGER, T INTEGER, GF INTEGER, GA INTEGER, PIM INTEGER);   
+#LOAD DATA LOCAL INFILE '/Users/wujiayao/Desktop/Databases/FinalProjectLocal/professional-hockey-database/TeamSC.csv' INTO TABLE TeamSC FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n' IGNORE 1 LINES;
+
+
+create table TeamHalf (Year INTEGER, LgID VARCHAR(4), TmID VARCHAR(3), Half INTEGER, Rank INTEGER, G INTEGER, W INTEGER, L INTEGER, T INTEGER, GF INTEGER, GA INTEGER);   
+
+LOAD DATA LOCAL INFILE '/Users/HelenCollins/601.415/TeamsHalf.csv' INTO TABLE TeamHalf FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n' IGNORE 1 LINES;
+
+##we don't care about post season
+#create table SeriesPost (Year INTEGER, LgID VARCHAR(4), TmID VARCHAR(3), Half INTEGER, Rank INTEGER, G INTEGER, W INTEGER, L INTEGER, T INTEGER, GF INTEGER, GA INTEGER);   
+#LOAD DATA LOCAL INFILE '/Users/wujiayao/Desktop/Databases/FinalProjectLocal/professional-hockey-database/TeamsHalf.csv' INTO TABLE TeamHalf FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n' IGNORE 1 LINES;
+
+create table Teams (Year INTEGER, LgID VARCHAR(4), TmID VARCHAR(3), FranchID VARCHAR(4), ConfID VARCHAR(4), DivID VARCHAR(4), Rank INTEGER, Playoff VARCHAR(4), G INTEGER, W INTEGER, L INTEGER, T INTEGER, OTL INTEGER, Pts INTEGER, SoW INTEGER, GF INTEGER, GA INTEGER, Name VARCHAR(50), PIM INTEGER, BenchMinor INTEGER, PPG INTEGER, PPC INTEGER, SHA INTEGER, PKG INTEGER, PKC INTEGER, SHF INTEGER);   
+
+LOAD DATA LOCAL INFILE '/Users/HelenCollins/601.415/Teams.csv' INTO TABLE Teams FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n' IGNORE 1 LINES;
+
+create table ScoringShootout (PlayerID VARCHAR(11), Year INTEGER, Stint INTEGER, TmID VARCHAR(3), S INTEGER, G INTEGER, GDG INTEGER);   
+
+LOAD DATA LOCAL INFILE '/Users/HelenCollins/601.415/ScoringShootout.csv' INTO TABLE ScoringShootout FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n' IGNORE 1 LINES;
+
+create table ScoringSC (PlayerID VARCHAR(11), Year INTEGER, TmID VARCHAR(3), LgID VARCHAR(3), Pos VARCHAR(1), GP INTEGER, G INTEGER, A INTEGER, Pts INTEGER, PIM INTEGER);   
+
+LOAD DATA LOCAL INFILE '/Users/HelenCollins/601.415/ScoringSC.csv' INTO TABLE ScoringSC FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n' IGNORE 1 LINES;
+
+#ignored the post season columns (last few)
+create table Scoring (PlayerID VARCHAR(11), Year INTEGER, Stint INTEGER, TmID VARCHAR(3), LgID VARCHAR(3), Pos VARCHAR(1), GP INTEGER, G INTEGER, A INTEGER, Pts INTEGER, PIM INTEGER, PlusOrMinus INTEGER, PPG INTEGER, PPA INTEGER, SHG INTEGER, SHA INTEGER, GWG INTEGER, GTG INTEGER, SOG INTEGER);   
+
+LOAD DATA LOCAL INFILE '/Users/HelenCollins/601.415/Scoring.csv' INTO TABLE Scoring FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n' IGNORE 1 LINES;
+
 
 
 
