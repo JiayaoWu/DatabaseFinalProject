@@ -41,16 +41,16 @@ AND G.PlayerID = M.PlayerID
 AND M.HofID = H.HofID
 GROUP BY G.PlayerID;
 
-Select '6. List the top ten goal scorers in the NHL in 1980 and any awards they have received. Order by num goals scores.' AS '';
+Select '6. List the top ten goal scorers in the NHL in 1920 and any awards they have received. Order by num goals scores.' AS '';
 Select distinct temp.FirstName, temp.LastName, temp.Goals, a.Award, a.Year as AwardYear
 From
 (Select distinct m.FirstName, m.LastName, s.G as Goals, s.PlayerID 
 From Scoring s, Master m
-Where s.PlayerID = m.PlayerID and s.Year = 1980
+Where s.PlayerID = m.PlayerID and s.Year = 1920
 Order by s.G DESC
 Limit 10) as temp
 left join AwardsPlayers as a on a.PlayerID = temp.PlayerID
-Order by temp.Goals DESC, temp.LastName DESC, a.Year DESC;
+Order by temp.Goals DESC;
 
 
 SELECT '7. List the name, height, weight and num shutouts of top 5 goalies with most shutouts in their entire career.'
@@ -133,7 +133,7 @@ FROM Goalies g, Master m
 WHERE g.Year = 1999 and m.PlayerID = g.PlayerID;
 
 
-Select '15. List the coach of the team whose players won the most awards in 2010.' AS '';
+Select '15. List the coaches of the teams whose players won the most awards in 2010.' AS '';
 Select distinct m.FirstName as CoachFirstName, m.LastName as CoachLastName, m2.FirstName as PlayerFirstName, m2.LastName as PlayerLastName, mostAwards.counts as AwardCounts
 FROM Scoring s, Coaches c, Master m, Master m2,
 (Select a.PlayerID, count(a.Award) as counts
