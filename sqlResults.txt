@@ -1,0 +1,892 @@
+mysql> use finalProject;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> \. /Users/wujiayao/Desktop/Databases/FinalProject/DatabaseFinalProject/tables.sql
+Query OK, 0 rows affected (0.14 sec)
+
+Query OK, 0 rows affected (0.05 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+Records: 0  Deleted: 0  Skipped: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 77 rows affected (0.01 sec)
+Records: 77  Deleted: 0  Skipped: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 2091 rows affected, 5 warnings (0.04 sec)
+Records: 2091  Deleted: 0  Skipped: 0  Warnings: 5
+
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Query OK, 1812 rows affected, 3609 warnings (0.02 sec)
+Records: 1812  Deleted: 0  Skipped: 0  Warnings: 3609
+
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Query OK, 54 rows affected (0.00 sec)
+Records: 54  Deleted: 0  Skipped: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 4278 rows affected, 6847 warnings (0.10 sec)
+Records: 4278  Deleted: 0  Skipped: 0  Warnings: 6847
+
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected (0.06 sec)
+
+Query OK, 31 rows affected, 16 warnings (0.00 sec)
+Records: 31  Deleted: 0  Skipped: 0  Warnings: 16
+
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 480 rows affected (0.01 sec)
+Records: 480  Deleted: 0  Skipped: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 366 rows affected (0.01 sec)
+Records: 366  Deleted: 0  Skipped: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.04 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 7761 rows affected, 37379 warnings (0.39 sec)
+Records: 7761  Deleted: 0  Skipped: 0  Warnings: 37379
+
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected (0.04 sec)
+
+Query OK, 25602 rows affected, 21368 warnings (0.25 sec)
+Records: 25602  Deleted: 0  Skipped: 0  Warnings: 21368
+
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 0 rows affected (0.04 sec)
+
+Query OK, 30 rows affected, 22 warnings (0.00 sec)
+Records: 30  Deleted: 0  Skipped: 0  Warnings: 22
+
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 41 rows affected (0.00 sec)
+Records: 41  Deleted: 0  Skipped: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.03 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 1519 rows affected, 7103 warnings (0.04 sec)
+Records: 1519  Deleted: 0  Skipped: 0  Warnings: 7103
+
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 2072 rows affected (0.03 sec)
+Records: 2072  Deleted: 0  Skipped: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 284 rows affected, 158 warnings (0.01 sec)
+Records: 284  Deleted: 0  Skipped: 0  Warnings: 158
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Query OK, 45967 rows affected, 65535 warnings (0.67 sec)
+Records: 45967  Deleted: 0  Skipped: 0  Warnings: 157043
+
+mysql> \. /Users/wujiayao/Desktop/Databases/FinalProject/DatabaseFinalProject/FinalHockeyQueries.sql
++---------------------------------------------------------------------------------------------------------------------+
+|                                                                                                                     |
++---------------------------------------------------------------------------------------------------------------------+
+| 1. List the name of all Players who have a nickname and were given at least two different awards in the same year.
+ |
++---------------------------------------------------------------------------------------------------------------------+
+1 row in set (0.00 sec)
+
++-----------+---------------+
+| FirstName | LastName      |
++-----------+---------------+
+| Sid       | Abel          |
+| Daniel    | Alfredsson    |
+| Tom       | Anderson      |
+| Syl       | Apps          |
+| Tom       | Barrasso      |
+| Marty     | Barry         |
+| Andy      | Bathgate      |
+| Ed        | Belfour       |
+| Jean      | Beliveau      |
+| Max       | Bentley       |
+| Bryan     | Berard        |
+| Patrice   | Bergeron      |
+| Toe       | Blake         |
+| Mike      | Bossy         |
+| Frank     | Boucher       |
+| Johnny    | Bower         |
+| Frank     | Brimsek       |
+| John      | Bucyk         |
+| Pavel     | Bure          |
+| Randy     | Carlyle       |
+| Lorne     | Chabot        |
+| Zdeno     | Chara         |
+| Gerry     | Cheevers      |
+| Chris     | Chelios       |
+| Bobby     | Clarke        |
+| Real      | Cloutier      |
+| Charlie   | Conacher      |
+| Yvan      | Cournoyer     |
+| Bill      | Cowley        |
+| Alex      | Delvecchio    |
+| Marcel    | Dionne        |
+| Gordie    | Drillon       |
+| Dave      | Dryden        |
+| Don       | Edwards       |
+| Phil      | Esposito      |
+| Tony      | Esposito      |
+| Sergei    | Fedorov       |
+| Peter     | Forsberg      |
+| Bob       | Froese        |
+| Grant     | Fuhr          |
+| Bob       | Gainey        |
+| Charlie   | Gardiner      |
+| Bernie    | Geoffrion     |
+| Ed        | Giacomin      |
+| Ebbie     | Goodfellow    |
+| Ron       | Grahame       |
+| Adam      | Graves        |
+| Wayne     | Gretzky       |
+| Glenn     | Hall          |
+| Dominik   | Hasek         |
+| Dany      | Heatley       |
+| Anders    | Hedberg       |
+| Camille   | Henry         |
+| Ron       | Hextall       |
+| Gordie    | Howe          |
+| Harry     | Howell        |
+| Bobby     | Hull          |
+| Brett     | Hull          |
+| Tom       | Johnson       |
+| Aurel     | Joliat        |
+| Olaf      | Kolzig        |
+| Vladimir  | Konstantinov  |
+| Guy       | Lafleur       |
+| Rod       | Langway       |
+| Reggie    | Leach         |
+| Mario     | Lemieux       |
+| Eric      | Lindros       |
+| Ted       | Lindsay       |
+| Harry     | Lumley        |
+| Al        | MacInnis      |
+| Brad      | McCrimmon     |
+| Don       | McLeod        |
+| Roland    | Melanson      |
+| Mark      | Messier       |
+| Rick      | Middleton     |
+| Stan      | Mikita        |
+| Dickie    | Moore         |
+| Howie     | Morenz        |
+| Bill      | Mosienko      |
+| Johnny    | Mowers        |
+| Evgeni    | Nabokov       |
+| Cam       | Neely         |
+| Ulf       | Nilsson       |
+| Pierre    | Pilote        |
+| Jacques   | Plante        |
+| Denis     | Potvin        |
+| Andrew    | Raycroft      |
+| Chuck     | Rayner        |
+| Maurice   | Richard       |
+| Larry     | Robinson      |
+| Luc       | Robitaille    |
+| Serge     | Savard        |
+| Terry     | Sawchuk       |
+| Teemu     | Selanne       |
+| Eddie     | Shore         |
+| Lars-Erik | Sjoberg       |
+| Al        | Smith         |
+| Billy     | Smith         |
+| Sid       | Smith         |
+| Pat       | Stapleton     |
+| Scott     | Stevens       |
+| Nels      | Stewart       |
+| Dave      | Taylor        |
+| J.C.      | Tremblay      |
+| Bryan     | Trottier      |
+| John      | Vanbiesbrouck |
+| Mike      | Walton        |
+| Steve     | Yzerman       |
++-----------+---------------+
+108 rows in set (0.03 sec)
+
++-----------------------------------------------------------------------------------------+
+|                                                                                         |
++-----------------------------------------------------------------------------------------+
+| 2. List the team name with the highest number of wins in each league from 1909 to 2011. |
++-----------------------------------------------------------------------------------------+
+1 row in set (0.00 sec)
+
++------+--------------------+------+
+| LgId | Name               | W    |
++------+--------------------+------+
+| NHA  | Quebec Bulldogs    |   16 |
+| NHA  | Montreal Canadiens |   16 |
+| PCHA | Vancouver Maroons  |   17 |
+| WCHL | Edmonton Eskimos   |   19 |
+| WHA  | Houston Aeros      |   53 |
+| NHL  | Detroit Red Wings  |   62 |
++------+--------------------+------+
+6 rows in set (0.01 sec)
+
++---------------------------------------------------------------------------------------------------------+
+|                                                                                                         |
++---------------------------------------------------------------------------------------------------------+
+| 3. List the first name, last name, and playerID of each goalie whose coach won the First Team All-Star. |
++---------------------------------------------------------------------------------------------------------+
+1 row in set (0.00 sec)
+
++-----------+----------+-----------+
+| FirstName | LastName | PlayerID  |
++-----------+----------+-----------+
+| Lester    | Patrick  | patrile01 |
++-----------+----------+-----------+
+1 row in set (0.03 sec)
+
++-----------------------------------------------------------------------------------------+
+|                                                                                         |
++-----------------------------------------------------------------------------------------+
+| 4. List the coach’s first name, last name and year of each team ranked #1 in the NHA.   |
++-----------------------------------------------------------------------------------------+
+1 row in set (0.00 sec)
+
++------+-----------+----------+--------------------+
+| year | FirstName | LastName | Name               |
++------+-----------+----------+--------------------+
+| 1909 | Dickie    | Boon     | Montreal Wanderers |
+| 1910 | Bruce     | Stuart   | Ottawa Senators    |
+| 1911 | Charles   | Nolan    | Quebec Bulldogs    |
+| 1912 | Mike      | Quinn    | Quebec Bulldogs    |
+| 1913 | Jack      | Marshall | Toronto Blueshirts |
+| 1914 | Alf       | Smith    | Ottawa Senators    |
+| 1915 | George    | Kennedy  | Montreal Canadiens |
+| 1916 | Eddie     | Gerard   | Ottawa Senators    |
++------+-----------+----------+--------------------+
+8 rows in set (0.03 sec)
+
++---------------------------------------------------------------------------------------------------+
+|                                                                                                   |
++---------------------------------------------------------------------------------------------------+
+| 5. List IDs of all goalies elected into the hall of fame whose coach is also in the hall of fame. |
++---------------------------------------------------------------------------------------------------+
+1 row in set (0.00 sec)
+
++-----------+
+| Goalie ID |
++-----------+
+| belfoed01 |
+| benedcl01 |
+| bowerjo01 |
+| brimsfr01 |
+| brodatu01 |
+| cattajo01 |
+| cheevge01 |
+| clancki01 |
+| cleghsp01 |
+| conacch01 |
+| conneal01 |
+| darraja01 |
+| drydeke01 |
+| durnabi01 |
+| esposto01 |
+| francem01 |
+| fuhrgr01  |
+| gardich01 |
+| giacoed01 |
+| hainsge01 |
+| hallgl01  |
+| hernri01  |
+| holmeha01 |
+| hornere01 |
+| keatsdu01 |
+| lehmahu01 |
+| lesuepe01 |
+| lumleha01 |
+| moranpa01 |
+| parenbe01 |
+| patrile01 |
+| plantja01 |
+| raynech01 |
+| roypa01   |
+| sawchte01 |
+| smithbi01 |
+| thompti01 |
+| vezinge01 |
+| worslgu01 |
+| wortero01 |
++-----------+
+40 rows in set (0.63 sec)
+
++-------------------------------------------------------------------------------------------------------------------+
+|                                                                                                                   |
++-------------------------------------------------------------------------------------------------------------------+
+| 6. List the top ten goal scorers in the NHL in 1980 and any awards they have received. Order by num goals scores. |
++-------------------------------------------------------------------------------------------------------------------+
+1 row in set (0.00 sec)
+
++-----------+----------+-------+----------------------+-----------+
+| FirstName | LastName | Goals | Award                | AwardYear |
++-----------+----------+-------+----------------------+-----------+
+| Mike      | Bossy    |    68 | Lady Byng            |      1985 |
+| Mike      | Bossy    |    68 | First Team All-Star  |      1985 |
+| Mike      | Bossy    |    68 | Second Team All-Star |      1984 |
+| Mike      | Bossy    |    68 | Lady Byng            |      1983 |
+| Mike      | Bossy    |    68 | First Team All-Star  |      1983 |
+| Mike      | Bossy    |    68 | Lady Byng            |      1982 |
+| Mike      | Bossy    |    68 | First Team All-Star  |      1982 |
+| Mike      | Bossy    |    68 | Conn Smythe          |      1981 |
+| Mike      | Bossy    |    68 | First Team All-Star  |      1981 |
+| Mike      | Bossy    |    68 | First Team All-Star  |      1980 |
+| Mike      | Bossy    |    68 | Second Team All-Star |      1978 |
+| Mike      | Bossy    |    68 | Second Team All-Star |      1977 |
+| Mike      | Bossy    |    68 | Calder               |      1977 |
+| Marcel    | Dionne   |    58 | Second Team All-Star |      1980 |
+| Marcel    | Dionne   |    58 | Art Ross             |      1979 |
+| Marcel    | Dionne   |    58 | First Team All-Star  |      1979 |
+| Marcel    | Dionne   |    58 | Pearson              |      1979 |
+| Marcel    | Dionne   |    58 | Second Team All-Star |      1978 |
+| Marcel    | Dionne   |    58 | Pearson              |      1978 |
+| Marcel    | Dionne   |    58 | First Team All-Star  |      1976 |
+| Marcel    | Dionne   |    58 | Lady Byng            |      1976 |
+| Marcel    | Dionne   |    58 | Lady Byng            |      1974 |
+| Charlie   | Simmer   |    56 | Masterton            |      1985 |
+| Charlie   | Simmer   |    56 | First Team All-Star  |      1980 |
+| Charlie   | Simmer   |    56 | First Team All-Star  |      1979 |
+| Rick      | Kehoe    |    55 | Lady Byng            |      1980 |
+| Wayne     | Gretzky  |    55 | Lady Byng            |      1998 |
+| Wayne     | Gretzky  |    55 | Second Team All-Star |      1997 |
+| Wayne     | Gretzky  |    55 | Second Team All-Star |      1996 |
+| Wayne     | Gretzky  |    55 | Second Team All-Star |      1993 |
+| Wayne     | Gretzky  |    55 | Art Ross             |      1993 |
+| Wayne     | Gretzky  |    55 | Lady Byng            |      1993 |
+| Wayne     | Gretzky  |    55 | Lady Byng            |      1991 |
+| Wayne     | Gretzky  |    55 | Art Ross             |      1990 |
+| Wayne     | Gretzky  |    55 | First Team All-Star  |      1990 |
+| Wayne     | Gretzky  |    55 | Lady Byng            |      1990 |
+| Wayne     | Gretzky  |    55 | Second Team All-Star |      1989 |
+| Wayne     | Gretzky  |    55 | Art Ross             |      1989 |
+| Wayne     | Gretzky  |    55 | Hart                 |      1988 |
+| Wayne     | Gretzky  |    55 | Second Team All-Star |      1988 |
+| Wayne     | Gretzky  |    55 | Second Team All-Star |      1987 |
+| Wayne     | Gretzky  |    55 | Conn Smythe          |      1987 |
+| Wayne     | Gretzky  |    55 | Pearson              |      1986 |
+| Wayne     | Gretzky  |    55 | Art Ross             |      1986 |
+| Wayne     | Gretzky  |    55 | Plus-Minus           |      1986 |
+| Wayne     | Gretzky  |    55 | First Team All-Star  |      1986 |
+| Wayne     | Gretzky  |    55 | Hart                 |      1986 |
+| Wayne     | Gretzky  |    55 | First Team All-Star  |      1985 |
+| Wayne     | Gretzky  |    55 | Hart                 |      1985 |
+| Wayne     | Gretzky  |    55 | Art Ross             |      1985 |
+| Wayne     | Gretzky  |    55 | Plus-Minus           |      1984 |
+| Wayne     | Gretzky  |    55 | First Team All-Star  |      1984 |
+| Wayne     | Gretzky  |    55 | Hart                 |      1984 |
+| Wayne     | Gretzky  |    55 | Art Ross             |      1984 |
+| Wayne     | Gretzky  |    55 | Pearson              |      1984 |
+| Wayne     | Gretzky  |    55 | Conn Smythe          |      1984 |
+| Wayne     | Gretzky  |    55 | Pearson              |      1983 |
+| Wayne     | Gretzky  |    55 | First Team All-Star  |      1983 |
+| Wayne     | Gretzky  |    55 | Plus-Minus           |      1983 |
+| Wayne     | Gretzky  |    55 | Hart                 |      1983 |
+| Wayne     | Gretzky  |    55 | Art Ross             |      1983 |
+| Wayne     | Gretzky  |    55 | Art Ross             |      1982 |
+| Wayne     | Gretzky  |    55 | Pearson              |      1982 |
+| Wayne     | Gretzky  |    55 | First Team All-Star  |      1982 |
+| Wayne     | Gretzky  |    55 | Hart                 |      1982 |
+| Wayne     | Gretzky  |    55 | First Team All-Star  |      1981 |
+| Wayne     | Gretzky  |    55 | Art Ross             |      1981 |
+| Wayne     | Gretzky  |    55 | Hart                 |      1981 |
+| Wayne     | Gretzky  |    55 | Pearson              |      1981 |
+| Wayne     | Gretzky  |    55 | Art Ross             |      1980 |
+| Wayne     | Gretzky  |    55 | Hart                 |      1980 |
+| Wayne     | Gretzky  |    55 | First Team All-Star  |      1980 |
+| Wayne     | Gretzky  |    55 | Second Team All-Star |      1979 |
+| Wayne     | Gretzky  |    55 | Hart                 |      1979 |
+| Wayne     | Gretzky  |    55 | Lady Byng            |      1979 |
+| Wayne     | Gretzky  |    55 | Second Team All-Star |      1978 |
+| Wayne     | Gretzky  |    55 | Kaplan               |      1978 |
+| Wayne     | Babych   |    54 | NULL                 |      NULL |
+| Jacques   | Richard  |    52 | NULL                 |      NULL |
+| Dennis    | Maruk    |    50 | NULL                 |      NULL |
+| Kent      | Nilsson  |    49 | Deneau               |      1978 |
+| Kent      | Nilsson  |    49 | Kaplan               |      1977 |
+| Mike      | Gartner  |    48 | NULL                 |      NULL |
++-----------+----------+-------+----------------------+-----------+
+83 rows in set (0.61 sec)
+
++---------------------------------------------------------------------------------------------------------------+
+|                                                                                                               |
++---------------------------------------------------------------------------------------------------------------+
+| 7. List the name, height, weight and num shutouts of top 5 goalies with most shutouts in their entire career. |
++---------------------------------------------------------------------------------------------------------------+
+1 row in set (0.00 sec)
+
++-----------+----------+--------+--------+--------------+
+| FirstName | LastName | Height | Weight | Num Shutouts |
++-----------+----------+--------+--------+--------------+
+| Jacques   | Plante   |     72 |    175 |            5 |
+| Evgeni    | Nabokov  |     72 |    200 |            3 |
+| Brian     | Boucher  |     74 |    198 |            2 |
+| Martin    | Gerber   |     71 |    201 |            2 |
+| Denis     | Herron   |     71 |    165 |            2 |
++-----------+----------+--------+--------+--------------+
+5 rows in set (0.02 sec)
+
++----------------------------------------------------------------------------------------+
+|                                                                                        |
++----------------------------------------------------------------------------------------+
+| 8. List the players who scored the most points at the Stanley Cup whose coach is dead. |
++----------------------------------------------------------------------------------------+
+1 row in set (0.00 sec)
+
++-----------+------------+
+| PlayerID  | Num Points |
++-----------+------------+
+| holmeha01 |          7 |
+| walkeja01 |          6 |
+| cookll01  |          6 |
+| lehmahu01 |          6 |
+| mackami01 |          6 |
+| foystfr01 |          6 |
+| benedcl01 |          5 |
+| broadpu01 |          5 |
+| gerared01 |          5 |
+| rowebo01  |          5 |
++-----------+------------+
+10 rows in set (0.16 sec)
+
++---------------------------------------------------------------------------------------------------+
+|                                                                                                   |
++---------------------------------------------------------------------------------------------------+
+| 9. List the names of both players who tied for an award, as well as the year the award was given. |
++---------------------------------------------------------------------------------------------------+
+1 row in set (0.00 sec)
+
++-----------+-----------+------+----------------------+
+| FirstName | LastName  | Year | Award                |
++-----------+-----------+------+----------------------+
+| Cecil     | Dillon    | 1937 | First Team All-Star  |
+| Gordie    | Drillon   | 1937 | First Team All-Star  |
+| Sid       | Abel      | 1950 | Second Team All-Star |
+| Ted       | Kennedy   | 1950 | Second Team All-Star |
+| Tony      | Esposito  | 1973 | Vezina               |
+| Bernie    | Parent    | 1973 | Vezina               |
+| Theoren   | Fleury    | 1990 | Plus-Minus           |
+| Marty     | McSorley  | 1990 | Plus-Minus           |
+| Joe       | Sakic     | 2000 | Plus-Minus           |
+| Patrik    | Elias     | 2000 | Plus-Minus           |
+| Peter     | Forsberg  | 2002 | Plus-Minus           |
+| Milan     | Hejduk    | 2002 | Plus-Minus           |
+| Marek     | Malik     | 2003 | Plus-Minus           |
+| Martin    | St. Louis | 2003 | Plus-Minus           |
+| Wade      | Redden    | 2005 | Plus-Minus           |
+| Michal    | Rozsival  | 2005 | Plus-Minus           |
++-----------+-----------+------+----------------------+
+16 rows in set (0.02 sec)
+
++--------------------------------------------------------------------------------------------------------------------------+
+|                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------+
+| 10. List the names of players with the most game deciding goals for every year between 2000 and 2010 and their position. |
++--------------------------------------------------------------------------------------------------------------------------+
+1 row in set (0.00 sec)
+
++-----------+----------+-----------+------+------+
+| FirstName | LastName | PlayerID  | GWG  | Year |
++-----------+----------+-----------+------+------+
+| Jeff      | Carter   | carteje01 |   12 | 2008 |
++-----------+----------+-----------+------+------+
+1 row in set (8.91 sec)
+
++----------------------------------------------------------------------------------------------+
+|                                                                                              |
++----------------------------------------------------------------------------------------------+
+| 11. List the average number of shots made over all 1962 Hall of Famer players hocky careers. |
++----------------------------------------------------------------------------------------------+
+1 row in set (0.00 sec)
+
++------------+------+--------------+
+| HoFID      | Year | s.SOG / s.GP |
++------------+------+--------------+
+| laflegu01h | 1988 |       1.8209 |
++------------+------+--------------+
+1 row in set (1.69 sec)
+
++--------------------------------------------------------------------------------------------+
+|                                                                                            |
++--------------------------------------------------------------------------------------------+
+| 12. List all teams who ranked higher in the second half of the season than the first half. |
++--------------------------------------------------------------------------------------------+
+1 row in set (0.00 sec)
+
++------+------+
+| TmID | Year |
++------+------+
+| MOC  | 1916 |
+| TBS  | 1916 |
+| TOB  | 1916 |
+| MTL  | 1917 |
+| MTL  | 1918 |
+| MTL  | 1919 |
+| OTS  | 1920 |
++------+------+
+7 rows in set (0.00 sec)
+
++------------------------------------------------------------------------------+
+|                                                                              |
++------------------------------------------------------------------------------+
+| 13. List all coaches who coach the same team that they previously played on. |
++------------------------------------------------------------------------------+
+1 row in set (0.00 sec)
+
++-----------+-------------+------------+------+
+| FirstName | LastName    | CoachID    | TmID |
++-----------+-------------+------------+------+
+| Sid       | Abel        | abelsi01c  | DET  |
+| Sid       | Abel        | abelsi01c  | CHI  |
+| Lou       | Angotti     | angotlo01c | PIT  |
+| Lou       | Angotti     | angotlo01c | STL  |
+| Al        | Arbour      | arboual01c | STL  |
+| George    | Armstrong   | armstge01c | TOR  |
+| Bill      | Barber      | barbebi01c | PHI  |
+| Doug      | Barkley     | barkldo01c | DET  |
+| Andy      | Bathgate    | bathgan01c | VAB  |
+| Red       | Berenson    | berenre01c | STL  |
+| Bob       | Berry       | berrybo01c | MTL  |
+| Bob       | Berry       | berrybo01c | LAK  |
+| Don       | Blackburn   | blackdo01c | NEW  |
+| Toe       | Blake       | blaketo01c | MTL  |
+| Frank     | Boucher     | bouchfr01c | NYR  |
+| Georges   | Boucher     | bouchge01c | OTS  |
+| Georges   | Boucher     | bouchge01c | MTM  |
+| Rick      | Bowness     | bowneri01c | WIN  |
+| Charlie   | Burns       | burnsch01c | MNS  |
+| Guy       | Carbonneau  | carbogu01c | MTL  |
+| Randy     | Carlyle     | carlyra01c | TOR  |
+| Gerry     | Cheevers    | cheevge01c | BOS  |
+| Don       | Cherry      | cherrdo01c | BOS  |
+| King      | Clancy      | clancki01c | TOR  |
+| Dit       | Clapper     | clappdi01c | BOS  |
+| Odie      | Cleghorn    | cleghod01c | PIP  |
+| Neil      | Colville    | colvine01c | NYR  |
+| Lionel    | Conacher    | conacli01c | NYA  |
+| Bill      | Cook        | cookbi01c  | NYR  |
+| Marc      | Crawford    | crawfma01c | VAN  |
+| Joe       | Crozier     | crozijo01c | TOR  |
+| Roger     | Crozier     | croziro01c | WAS  |
+| Hap       | Day         | dayha01c   | TOR  |
+| Billy     | Dea         | deabi01c   | DET  |
+| Alex      | Delvecchio  | delveal01c | DET  |
+| Cy        | Denneny     | dennecy01c | OTS  |
+| Cy        | Denneny     | dennecy01c | BOS  |
+| Rick      | Dudley      | dudleri01c | BUF  |
+| Dick      | Duff        | duffdi01c  | TOR  |
+| Art       | Duncan      | duncaar01c | DTC  |
+| Art       | Duncan      | duncaar01c | TOR  |
+| Red       | Dutton      | duttore01c | NYA  |
+| Phil      | Esposito    | esposph01c | NYR  |
+| Emile     | Francis     | francem01c | NYR  |
+| Frank     | Fredrickson | fredrfr01c | PIP  |
+| Bill      | Gadsby      | gadsbbi01c | DET  |
+| Bob       | Gainey      | gainebo01c | MTL  |
+| Herb      | Gardiner    | gardihe01c | CAT  |
+| Herb      | Gardiner    | gardihe01c | CHI  |
+| Jimmy     | Gardner     | gardnji01c | MOW  |
+| Jimmy     | Gardner     | gardnji01c | NWR  |
+| Jimmy     | Gardner     | gardnji01c | MOC  |
+| Jean-Guy  | Gendron     | gendrje01c | QUN  |
+| Bernie    | Geoffrion   | geoffbe01c | MTL  |
+| Bernie    | Geoffrion   | geoffbe01c | NYR  |
+| Eddie     | Gerard      | gerared01c | OT1  |
+| Eddie     | Gerard      | gerared01c | OTS  |
+| Bill      | Goldsworthy | goldsbi01c | IND  |
+| Butch     | Goring      | gorinbu01c | NYI  |
+| Butch     | Goring      | gorinbu01c | BOS  |
+| Johnny    | Gottselig   | gottsjo01c | CHI  |
+| Dirk      | Graham      | grahadi01c | CHI  |
+| Shorty    | Green       | greensh01c | NYA  |
+| Bep       | Guidolin    | guidobe01c | BOS  |
+| John      | Hanna       | hannajo01c | CLC  |
+| Ted       | Harris      | harrite01c | MNS  |
+| Doug      | Harvey      | harvedo01c | NYR  |
+| Frank     | Heffernan   | heffefr01c | TRS  |
+| Lorne     | Henning     | hennilo01c | NYI  |
+| Larry     | Hillman     | hillmla01c | WIJ  |
+| Paul      | Holmgren    | holmgpa01c | PHI  |
+| Harry     | Howell      | howelha01c | NYJ  |
+| Harry     | Howell      | howelha01c | SDM  |
+| Bobby     | Hull        | hullbo01c  | WIJ  |
+| Dale      | Hunter      | hunteda02c | WAS  |
+| Billy     | Inglis      | inglibi01c | BUF  |
+| Dick      | Irvin       | irvindi01c | CHI  |
+| Eddie     | Johnston    | johnsed01c | CHI  |
+| Marshall  | Johnston    | johnsma01c | CLF  |
+| Tom       | Johnson     | johnsto01c | BOS  |
+| Steve     | Kasper      | kaspest01c | BOS  |
+| Duke      | Keats       | keatsdu01c | DTC  |
+| Rick      | Kehoe       | kehoeri01c | PIT  |
+| Red       | Kelly       | kellyre01c | TOR  |
+| Orland    | Kurtenbach  | kurteor01c | VAN  |
+| Newsy     | Lalonde     | lalonne01c | MTL  |
+| Newsy     | Lalonde     | lalonne01c | SAC  |
+| Newsy     | Lalonde     | lalonne01c | SAS  |
+| Newsy     | Lalonde     | lalonne01c | NYA  |
+| Jacques   | Laperriere  | laperja01c | MTL  |
+| Jack      | Laviolette  | lavioja01c | LES  |
+| Bob       | Leduc       | leducbo01c | TOT  |
+| Hugh      | Lehman      | lehmahu01c | CHI  |
+| Jacques   | Lemaire     | lemaija01c | MTL  |
+| Pit       | Lepine      | lepinpi01c | MTL  |
+| Dave      | Lewis       | lewisda01c | DET  |
+| Rick      | Ley         | leyri01c   | HAR  |
+| Ted       | Lindsay     | lindste01c | DET  |
+| Barry     | Long        | longba01c  | WIN  |
+| Clem      | Loughlin    | loughcl01c | CHI  |
+| Kevin     | Lowe        | loweke01c  | EDM  |
+| Ron       | Low         | lowro01c   | EDM  |
+| Parker    | MacDonald   | macdopa01c | MNS  |
+| John      | MacLean     | maclejo01c | NJD  |
+| Al        | MacNeil     | macneal01c | MTL  |
+| Craig     | MacTavish   | mactacr01c | EDM  |
+| Keith     | Magnuson    | magnuke01c | CHI  |
+| Dan       | Maloney     | malonda01c | TOR  |
+| Sylvio    | Mantha      | manthsy01c | MTL  |
+| Jack      | Marshall    | marshja02c | TBS  |
+| Jack      | McCartan    | mccarja01c | MFS  |
+| Ted       | McCaskill   | mccaste01c | LAS  |
+| Bill      | McCreary    | mccrebi01c | STL  |
+| John      | McKenzie    | mckenjo01c | PHB  |
+| John      | McKenzie    | mckenjo01c | VAB  |
+| John      | McLellan    | mcleljo01c | TOR  |
+| Howard    | McNamara    | mcnamho01c | TOB  |
+| Howie     | Meeker      | meekeho01c | TOR  |
+| Mike      | Milbury     | milbumi01c | BOS  |
+| Dunc      | Munro       | munrodu01c | MTM  |
+| Mike      | Murphy      | murphmi01c | LAK  |
+| Terry     | Murray      | murrate01c | PHI  |
+| Terry     | Murray      | murrate01c | WAS  |
+| Lou       | Nanne       | nannelo01c | MNS  |
+| Mike      | Nykoluk     | nykolmi01c | TOR  |
+| Mike      | O'Connell   | oconnmi01c | BOS  |
+| Ed        | Olczyk      | olczyed01c | PIT  |
+| Murray    | Oliver      | olivemu01c | MNS  |
+| Terry     | O'Reilly    | oreilte01c | BOS  |
+| Brad      | Park        | parkbr01c  | DET  |
+| Frank     | Patrick     | patrifr01c | VML  |
+| Frank     | Patrick     | patrifr01c | VAM  |
+| Frank     | Patrick     | patrifr01c | VMR  |
+| Lester    | Patrick     | patrile01c | VA1  |
+| Lester    | Patrick     | patrile01c | SPO  |
+| Lester    | Patrick     | patrile01c | VA2  |
+| Lester    | Patrick     | patrile01c | VIC  |
+| Lester    | Patrick     | patrile01c | NYR  |
+| Lynn      | Patrick     | patrily01c | NYR  |
+| Muzz      | Patrick     | patrimu01c | NYR  |
+| Alf       | Pike        | pikeal01c  | NYR  |
+| Barclay   | Plager      | plageba01c | STL  |
+| Bob       | Plager      | plagebo01c | STL  |
+| Larry     | Popein      | popeila01c | NYR  |
+| Joe       | Primeau     | primejo01c | TOR  |
+| Bob       | Pulford     | pulfobo01c | LAK  |
+| Pat       | Quinn       | quinnpa01c | TOR  |
+| Pat       | Quinn       | quinnpa01c | VAN  |
+| Craig     | Ramsay      | ramsacr01c | BUF  |
+| Ken       | Randall     | randake01c | HAM  |
+| Doug      | Risebrough  | risebdo01c | CAL  |
+| Jimmy     | Roberts     | roberji01c | STL  |
+| Larry     | Robinson    | robinla01c | LAK  |
+| Art       | Ross        | rossar01c  | MOW  |
+| Art       | Ross        | rossar01c  | MTW  |
+| Lindy     | Ruff        | ruffli01c  | BUF  |
+| Glen      | Sather      | sathegl01c | NYR  |
+| Glen      | Sather      | sathegl01c | EDO  |
+| Andre     | Savard      | savaran01c | QUE  |
+| Denis     | Savard      | savarde01c | CHI  |
+| Ken       | Schinkel    | schinke01c | PIT  |
+| Milt      | Schmidt     | schmimi01c | BOS  |
+| Jim       | Schoenfeld  | schoeji01c | BUF  |
+| Fred      | Shero       | sherofr01c | NYR  |
+| Joe       | Simpson     | simpsjo01c | NYA  |
+| Floyd     | Smith       | smithfl01c | TOR  |
+| Floyd     | Smith       | smithfl01c | BUF  |
+| Barney    | Stanley     | stanlba01c | CAT  |
+| Barney    | Stanley     | stanlba01c | CHI  |
+| Pat       | Stapleton   | staplpa01c | CHC  |
+| Pat       | Stapleton   | staplpa01c | IND  |
+| John      | Stevens     | stevejo01c | PHI  |
+| Ron       | Stewart     | stewaro01c | NYR  |
+| Bruce     | Stuart      | stuarbr02c | OT1  |
+| Mike      | Sullivan    | sullimi01c | BOS  |
+| Red       | Sullivan    | sullire01c | NYR  |
+| Brian     | Sutter      | suttebr01c | STL  |
+| Darryl    | Sutter      | sutteda01c | CHI  |
+| Jean-Guy  | Talbot      | talboje01c | STL  |
+| Paul      | Thompson    | thomppa01c | CHI  |
+| Mario     | Tremblay    | trembma02c | MTL  |
+| Gene      | Ubriaco     | ubriage01c | PIT  |
+| Rogie     | Vachon      | vachoro01c | LAK  |
+| Phil      | Watson      | watsoph01c | NYR  |
+| Cooney    | Weiland     | weilaco01c | BOS  |
+| Bill      | White       | whitebi01c | CHI  |
+| Ian       | Wilkie      | wilkiia01c | NRA  |
+| Johnny    | Wilson      | wilsojo01c | DET  |
+| Larry     | Wilson      | wilsola01c | DET  |
+| Ron       | Wilson      | wilsoro02c | TOR  |
+| Trent     | Yawney      | yawnetr01c | CHI  |
++-----------+-------------+------------+------+
+191 rows in set (22.10 sec)
+
++--------------------------------------------------------------------------------------+
+|                                                                                      |
++--------------------------------------------------------------------------------------+
+| 14. List the average number of “goals against” per game for each goalie in 1999.     |
++--------------------------------------------------------------------------------------+
+1 row in set (0.00 sec)
+
++----------------+---------------+-----------------+------+
+| FirstName      | LastName      | AvgGoalsAgainst | TmID |
++----------------+---------------+-----------------+------+
+| Jean-Sebastien | Aubin         |          2.3529 | PIT  |
+| Tom            | Barrasso      |          2.5556 | PIT  |
+| Tom            | Barrasso      |          3.1429 | OTT  |
+| Ed             | Belfour       |          2.0484 | DAL  |
+| Zac            | Bierk         |          2.5833 | TBL  |
+| Craig          | Billington    |          2.1538 | WAS  |
+| Martin         | Biron         |          2.1951 | BUF  |
+| Brian          | Boucher       |          1.8571 | PHI  |
+| Fred           | Brathwaite    |          2.5902 | CAL  |
+| Martin         | Brodeur       |          2.2361 | NJD  |
+| Sean           | Burke         |          2.5714 | FLO  |
+| Sean           | Burke         |          2.5143 | PHO  |
+| Dan            | Cloutier      |          2.7885 | TBL  |
+| Marcel         | Cousineau     |          1.2000 | LAK  |
+| Byron          | Dafoe         |          2.7805 | BOS  |
+| Marc           | Denis         |          2.2174 | COL  |
+| Mike           | Dunham        |          2.8077 | NAS  |
+| Robert         | Esche         |          2.8750 | PHO  |
+| Bob            | Essensa       |          2.4333 | PHO  |
+| Scott          | Fankhouser    |          3.0625 | ATL  |
+| Manny          | Fernandez     |          2.0000 | DAL  |
+| Eric           | Fichaud       |          2.6667 | CAR  |
+| Stephane       | Fiset         |          2.5319 | LAK  |
+| Mark           | Fitzpatrick   |          2.6667 | CAR  |
+| Wade           | Flaherty      |          1.7500 | NYI  |
+| Mike           | Fountain      |          1.0000 | OTT  |
+| Grant          | Fuhr          |          3.3478 | CAL  |
+| Jean-Sebastien | Giguere       |          2.1429 | CAL  |
+| John           | Grahame       |          2.2917 | BOS  |
+| Jeff           | Hackett       |          2.3571 | MTL  |
+| Dominik        | Hasek         |          2.1714 | BUF  |
+| Glenn          | Healy         |          2.9500 | TOR  |
+| Guy            | Hebert        |          2.4412 | ANA  |
+| Milan          | Hnilicka      |          2.5000 | NYR  |
+| Kevin          | Hodson        |          1.9583 | TBL  |
+| Jani           | Hurme         |          2.0000 | OTT  |
+| Arturs         | Irbe          |          2.3333 | CAR  |
+| Curtis         | Joseph        |          2.5079 | TOR  |
+| Trevor         | Kidd          |          2.4643 | FLO  |
+| Dieter         | Kochan        |          3.4000 | TBL  |
+| Olaf           | Kolzig        |          2.2329 | WAS  |
+| Jean-Francois  | Labbe         |          3.0000 | NYR  |
+| Patrick        | Lalime        |          2.0789 | OTT  |
+| Marc           | Lamothe       |          5.0000 | CHI  |
+| Scott          | Langkow       |          3.6667 | ATL  |
+| Manny          | Legace        |          2.7500 | DET  |
+| Roberto        | Luongo        |          2.9167 | NYI  |
+| Norm           | Maracle       |          2.9375 | ATL  |
+| Kirk           | McLean        |          2.6364 | NYR  |
+| Jamie          | McLennan      |          1.7368 | STL  |
+| Alfie          | Michaud       |          2.5000 | VAN  |
+| Mike           | Minard        |          3.0000 | EDM  |
+| Evgeni         | Nabokov       |          1.3636 | SJS  |
+| Chris          | Osgood        |          2.3774 | DET  |
+| Rich           | Parent        |          3.0714 | TBL  |
+| Steve          | Passmore      |          2.6250 | CHI  |
+| Felix          | Potvin        |          3.0909 | NYI  |
+| Felix          | Potvin        |          2.5000 | VAN  |
+| Daren          | Puppa         |          3.8000 | TBL  |
+| Bill           | Ranford       |          2.9375 | EDM  |
+| Damian         | Rhodes        |          3.6071 | ATL  |
+| Mike           | Richter       |          2.8361 | NYR  |
+| Dwayne         | Roloson       |          2.2857 | BUF  |
+| Dominic        | Roussel       |          2.6000 | ANA  |
+| Patrick        | Roy           |          2.2381 | COL  |
+| Tommy          | Salo          |          2.3143 | EDM  |
+| Corey          | Schwab        |          2.6667 | VAN  |
+| Steve          | Shields       |          2.4179 | SJS  |
+| Mikhail        | Shtalenkov    |          2.4000 | PHO  |
+| Mikhail        | Shtalenkov    |          2.2667 | FLO  |
+| Richard        | Shulmistra    |          1.0000 | FLO  |
+| Peter          | Skudra        |          2.4000 | PIT  |
+| Garth          | Snow          |          2.3750 | VAN  |
+| Jamie          | Storr         |          2.2143 | LAK  |
+| Rick           | Tabaracci     |          4.0000 | ATL  |
+| Rick           | Tabaracci     |          1.0000 | COL  |
+| Robbie         | Tallas        |          2.6667 | BOS  |
+| Chris          | Terreri       |          3.0833 | NJD  |
+| Jose           | Theodore      |          1.9333 | MTL  |
+| Jocelyn        | Thibault      |          2.6333 | CHI  |
+| Ron            | Tugnutt       |          2.3409 | OTT  |
+| Ron            | Tugnutt       |          2.1429 | PIT  |
+| Roman          | Turek         |          1.9254 | STL  |
+| Stephen        | Valiquette    |          1.0000 | NYI  |
+| John           | Vanbiesbrouck |          2.1600 | PHI  |
+| Mike           | Vernon        |          2.1333 | SJS  |
+| Mike           | Vernon        |          2.4412 | FLO  |
+| Tomas          | Vokoun        |          2.6364 | NAS  |
+| Kevin          | Weekes        |          2.3500 | VAN  |
+| Kevin          | Weekes        |          3.1944 | NYI  |
+| Ken            | Wregget       |          2.4138 | DET  |
++----------------+---------------+-----------------+------+
+91 rows in set (0.13 sec)
+
++------------------------------------------------------------------------------+
+|                                                                              |
++------------------------------------------------------------------------------+
+| 15. List the coach of the team with the player with the most awards in 2010. |
++------------------------------------------------------------------------------+
+1 row in set (0.00 sec)
+
++----------------+---------------+-----------------+----------------+-------------+--------+
+| CoachFirstName | CoachLastName | PlayerFirstName | PlayerLastName | AwardCounts | TeamID |
++----------------+---------------+-----------------+----------------+-------------+--------+
+| Claude         | Julien        | Tim             | Thomas         |           4 | BOS    |
++----------------+---------------+-----------------+----------------+-------------+--------+
+1 row in set (0.11 sec)
+
+mysql> notee
