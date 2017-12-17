@@ -68,7 +68,6 @@ DESC LIMIT 5;
 
 SELECT '8. List the players who scored the most points at the Stanley Cup whose coach is dead.'
 AS '';
-## FOR SOME REASON THE VALUES ARE ALL DOUBLED?! FIX THIS
 SELECT DISTINCT S.PlayerID, COUNT(S.G) as 'Num Points'
 FROM ScoringSC AS S, Coaches AS C, Master AS M
 WHERE S.Year = C.Year
@@ -103,15 +102,12 @@ FROM (
 ) AS x
 ORDER BY x.Year ASC LIMIT 10;
 
-#should we sum all the scores for all years?
 Select '11. List the average number of shots made over all 1962 Hall of Famer players hocky careers.' AS '';
 Select distinct h.HoFID, h.Year, s.SOG / s.GP
 FROM HOF h, Scoring s
 WHERE h.Year = s.Year and substring(h.HoFID, 1, length(h.HoFID)-1) = s.PlayerID;
 
 
-#maybe can calculate the percentage? more advanced....
-#changed the question a little bit.....
 Select '12. List all teams who ranked higher in the second half of the season than the first half.' AS '';
 Select distinct t1.TmID, t1.Year
 FROM TeamHalf t1, TeamHalf t2
@@ -119,14 +115,12 @@ WHERE t1.Half = 1 and t2.Half = 2 and t2.Rank > t1.Rank
 and t1.TmID = t2.TmID and t1.LgID = t2.LgID and t1.Year = t2.Year;
 
 
-#all coachID ends with 'C'
 Select '13. List all coaches who coach the same team that they previously played on.' AS '';
 Select distinct m.FirstName, m.LastName, c.CoachID, c.TmID
 FROM Coaches c, Scoring s, Master m
 WHERE m.CoachID = c.CoachID and m.PlayerID = s.PlayerID and c.TmID = s.TmID;
 
 
-#gives duplicated names tho...some goalies are in different teams in the same year
 Select '14. List the average number of “goals against” per game for each goalie in 1999.' AS '';
 Select distinct m.FirstName, m.LastName, g.GA / g.GP as AvgGoalsAgainst, g.TmID
 FROM Goalies g, Master m

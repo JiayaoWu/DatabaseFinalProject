@@ -140,3 +140,20 @@ r_cv = cross_val_score(model, Train_x, Train_y, cv=10).mean()
 print "Cross Validation Accuracy", r_cv
 
 #Plot
+plt.scatter(1, log_cv, c = 'darkorange', marker='o', alpha=0.7, s=110)
+plt.scatter(2, svm_cv, c = 'navy', marker='o', alpha=0.7, s=110)
+plt.scatter(3, dec_cv, c = 'pink', marker='o', alpha=0.7, s=110)
+plt.scatter(4, nav_cv, c = 'purple', marker='o', alpha=0.7, s=110)
+plt.scatter(5, k_cv, c = 'red', marker='o', alpha=0.7, s=110)
+plt.scatter(6, r_cv, c = 'hotpink', marker='o', alpha=0.7, s=110)
+xticks = ['Log', 'SVM', 'DecisionTree', 'NaiveBayes', 'K-NN', 'RandomForest']
+plt.xticks([1,2,3,4,5,6],xticks)
+plt.title("Cross Validation Accuracy With Different Methods")
+plt.ylabel("Cross Validation Accuracy")
+plt.xlabel("Method")
+plt.show()
+
+
+
+
+
