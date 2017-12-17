@@ -133,8 +133,8 @@ FROM Goalies g, Master m
 WHERE g.Year = 1999 and m.PlayerID = g.PlayerID;
 
 
-Select '15. List the coach of the team whose players won the most awards in 2010.' AS '';
-Select distinct m.FirstName as CoachFirstName, m.LastName as CoachLastName, m2.FirstName as PlayerFirstName, m2.LastName as PlayerLastName, mostAwards.counts as AwardCounts
+Select '15. List the coach of the team with the player with the most awards in 2010.' AS '';
+Select distinct m.FirstName as CoachFirstName, m.LastName as CoachLastName, m2.FirstName as PlayerFirstName, m2.LastName as PlayerLastName, mostAwards.counts as AwardCounts, c.TmID as TeamID
 FROM Scoring s, Coaches c, Master m, Master m2,
 (Select a.PlayerID, count(a.Award) as counts
 From AwardsPlayers a
